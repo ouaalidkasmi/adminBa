@@ -1,0 +1,176 @@
+            
+                <h1 mat-dialog-title >New Product</h1>
+                <div mat-dialog-content>
+                <form  [formGroup]="reactiveForm" >
+
+                  
+
+                  <div class="row mb-3">
+                     <mat-form-field appearance="outline">
+                        <mat-label>Product Name</mat-label>
+                        <input matInput formControlName="titre" required>
+                      </mat-form-field>
+                     </div>
+                      <div class="example-container" >
+                        
+                        <mat-form-field appearance="outline" >
+                           <mat-label>Id</mat-label>
+                           <input matInput  formControlName="id" required>
+                         </mat-form-field>
+    
+                        <mat-form-field appearance="outline">
+                          <mat-label>Type</mat-label>
+                          <mat-select formControlName="type" required>
+                            <mat-option *ngFor="let type of types" [value]="type.value">
+                              {{type.viewValue}}
+                            </mat-option>
+                          </mat-select>
+                        </mat-form-field>
+                        
+                          
+                        </div>
+    
+                     <div class="example-container" >
+                        
+                        <mat-form-field appearance="outline" floatLabel="always">
+                           <mat-label>Price</mat-label>
+                           <input formControlName="price" matInput type="number" class="example-left-align" placeholder="12.99" required>
+                           <span matSuffix>$&nbsp;</span>
+                         </mat-form-field>
+    
+    <mat-form-field appearance="outline" >
+     <mat-label>category</mat-label>
+     <mat-select aria-required="true" formControlName="category" required>
+       <mat-option *ngFor="let category of categories" [value]="category.value">
+         {{category.viewValue}}
+       </mat-option>
+     </mat-select>
+    </mat-form-field>
+    
+     
+    
+    </div>
+    
+    <div class="row mb-3">
+    <mat-form-field appearance="outline">
+      <mat-label>Description</mat-label>
+      <textarea matInput formControlName="description" ></textarea>
+    </mat-form-field>
+    </div>
+    
+    <div class="example-container" >
+                        
+     
+      <mat-form-field appearance="outline">
+         <mat-label>C1</mat-label>
+         <input matInput formControlName="C1">
+       </mat-form-field>
+    
+       <mat-form-field appearance="outline">
+         <mat-label>C2</mat-label>
+         <input matInput formControlName="C2">
+       </mat-form-field>
+    
+    
+    
+    </div>
+    
+    <div class="example-container" >
+                        
+     
+      <mat-form-field appearance="outline">
+         <mat-label>C3</mat-label>
+         <input matInput formControlName="C3">
+       </mat-form-field>
+    
+       <mat-form-field appearance="outline">
+         <mat-label>C4</mat-label>
+         <input matInput formControlName="C4">
+       </mat-form-field>
+    
+    
+    
+    </div>
+    
+    <div class="example-container" >
+                        
+     
+      <mat-form-field appearance="outline">
+         <mat-label>C5</mat-label>
+         <input matInput formControlName="C5">
+       </mat-form-field>
+    
+       <mat-form-field appearance="outline">
+         <mat-label>C6</mat-label>
+         <input matInput formControlName="C6">
+       </mat-form-field>
+    
+    
+    
+    </div>
+    
+    <div class="example-container" >
+                        
+     
+      <mat-form-field appearance="outline">
+         <mat-label>C7</mat-label>
+         <input matInput formControlName="C7">
+       </mat-form-field>
+    
+       <mat-form-field appearance="outline">
+         <mat-label>C8</mat-label>
+         <input matInput formControlName="C8">
+       </mat-form-field>
+    </div>
+
+
+                </form>
+</div>
+
+ 
+    <div mat-dialog-action  [align]="'end'"  >
+      <button   mat-raised-button color="warn" mat-dialog-close>Close</button>
+      <button  style=" margin-left: 8px;" mat-raised-button  (click)="onSubmit()" color="primary" >{{actionBtn}}</button>
+</div>
+
+ 
+           
+               <!-- <form    [formGroup]="reactiveForm"  >
+                  <div class="row mb-3">
+                     <label for="inputText" class="col-sm-2 col-form-label">Name</label>
+                     <div class="col-sm-10"> <input type="text" class="form-control" formControlName="titre"></div>
+                  </div>
+                 
+                  <div class="row mb-3">
+                   <label for="inputPassword" class="col-sm-2 col-form-label">Description</label>
+                   <div class="col-sm-10"><textarea class="form-control" style="height: 100px" formControlName="description"></textarea></div>
+                </div>
+               
+                <div class="row mb-3">
+                   <label for="inputNumber" class="col-sm-2 col-form-label"> Price</label>
+                   <div class="col-sm-10"> <input type="number" class="form-control" formControlName="price"></div>
+                </div>
+ 
+                  <div class="row mb-3">
+                     <label class="col-sm-2 col-form-label">Catégory</label>
+                     <div class="col-sm-10">
+                        <select class="form-select" aria-label="Default select example" formControlName="category">
+                           <option value="1">rabian Food</option>
+                           <option value="2">Iranian Food</option>
+                           <option value="3">Indian Food</option>
+                        </select>
+                     </div>
+                  </div>
+                  <div class="row mb-3">
+                   <label for="inputNumber" class="col-sm-2 col-form-label">Quantity in Stock</label>
+                   <div class="col-sm-10" > <input type="number" class="form-control"  formControlName="quantite"></div>
+                </div>
+               </form>
+
+                  <div class="row mb-3" [align]="'end'">
+                     <div class="col-sm-10"> <button class="btn btn-primary"  (click)="onSubmit()" >Publish</button></div>
+ 
+                  </div> -->
+            <!-- </div>
+         </div>
+      </div> -->

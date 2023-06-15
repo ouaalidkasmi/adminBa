@@ -1,0 +1,35 @@
+<aside id="sidebar" class="sidebar">
+    <ul class="sidebar-nav" id="sidebar-nav">
+       <li class="nav-item"> <a class="nav-link " routerLink="/dashboard"> <i class="bi bi-grid"></i> <span>Dashboard</span> </a></li>
+       <li class="nav-item">
+          <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#"> <i class="bi bi-menu-button-wide"></i><span>Products</span><i class="bi bi-chevron-down ms-auto"></i> </a>
+          <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+             <li> <a routerLink="/alerts"> <i class="bi bi-circle"></i><span>add Product</span> </a></li>
+             <li> <a routerLink="/accordion"> <i class="bi bi-circle"></i><span>Products List</span> </a></li>
+             
+          </ul>
+       </li>
+       <li class="nav-item">
+          <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#"> <i class="bi bi-journal-text"></i><span>Orders</span><i class="bi bi-chevron-down ms-auto"></i> </a>
+          <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+             <li> <a routerLink="/form-elements"> <i class="bi bi-circle"></i><span>Orders List</span> </a></li>
+             <li> <a routerLink="/form-layouts"> <i class="bi bi-circle"></i><span>Example</span> </a></li>
+          </ul>
+       </li>
+       <li class="nav-item">
+          <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#"> <i class="bi bi-layout-text-window-reverse"></i><span>Customers</span><i class="bi bi-chevron-down ms-auto"></i> </a>
+          <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+             <li> <a routerLink="/tables-general"> <i class="bi bi-circle"></i><span>Customers List</span> </a></li>
+             <li> <a routerLink="/tables-data"> <i class="bi bi-circle"></i><span>Example</span> </a></li>
+          </ul>
+       </li>
+
+      
+      
+       
+       <li class="nav-heading">Pages</li>
+       <li class="nav-item"> <a class="nav-link collapsed" routerLink="/user-profile"> <i class="bi bi-person"></i> <span>Profile</span> </a></li>
+       <li class="nav-item"> <a class="nav-link collapsed" routerLink="/pages-login"> <i class="bi bi-box-arrow-in-right"></i> <span>Login</span> </a></li>
+
+    </ul>
+ </aside>
